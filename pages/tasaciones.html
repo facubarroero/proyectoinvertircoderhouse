@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Tasaciones</title>
+</head>
+<body>
+    <header class="header-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="../index.html" class="logo"><img src="../img/favicon.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./venta.html">VENTAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./alquileres.html">ALQUILERES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tasaciones.html">TASACIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="tas-main-container">
+        <h2>¡Tasamos tu propiedad!</h2> 
+        <p>
+            Contanos sobre la propiedad que nos vas a compartir:
+        </p> 
+        <section class="form-tas-container">
+            <form method="post" class="form-cont">
+                <ul>
+                    <li>
+                        Correo electrónico*
+                        <br>
+                        <input type="text" name="correo-electronico">
+                    </li>
+                    <li>
+                        Teléfono*
+                        <br>
+                        <input type="text" name="telefono">
+                    </li>
+                    <li>
+                        Detalle la propiedad
+                        <br>
+                        <textarea name="mensaje" cols="50" rows="10"></textarea>
+                    </li>
+                </ul>
+            </form>
+            <button>ENVIAR</button>
+        </section>
+    </main>
+
+    <footer>
+        <img src="../img/favicon.png" alt="Logo" class="icono-footer">
+        <div class="numeros-contacto">
+            <h3>Contacto</h3>
+            <ul>
+                <li>9 de Julio 318</li>
+                <li>2983-123456</li>
+                <li>2983-654321</li>
+                <li>invertir@gmail.com</li>
+            </ul>
+        </div>
+        <div class="links-utiles">
+            <h3>Links utiles</h3>
+            <ul>
+                <li><a href="./ventas.html">Ventas</a></li>
+                <li><a href="./alquileres.html">Alquilers</a></li>
+                <li><a href="./tasaciones.html">Tasaciones</a></li>
+            </ul>
+        </div>
+        <div class="contenedor-redes">
+            <h3>Redes</h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100065141395563" target="_blank">
+                    <img src="../img/facebook.png" alt="Logo de Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../img/instagram.png" alt="Logo de Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="../img/twitter.png" alt="Logo de Twitter">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
