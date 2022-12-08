@@ -313,6 +313,8 @@ footer {
     grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-areas: "recientes" "grid-item1" "grid-item2" "grid-item3" "grid-item4" "grid-item5" "grid-item6" "boton-cargar";
     grid-row-gap: 2rem; }
+    .main-container .galeria-container .boton-cargar {
+      margin: auto; }
   .contacto-main-container h1 {
     font-size: 2rem; }
   .contacto-main-container .gen-container {
