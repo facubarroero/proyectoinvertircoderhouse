@@ -1,0 +1,68 @@
+footer{
+    background-color: rgb(255, 255, 255);
+    height: 10rem;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "logo contacto links redes"
+    ;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    .icono-footer{
+        width: 150px;
+        height: 60px;
+        grid-area: logo;
+    }
+    img{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    div{
+        display: inline-block;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        h3{
+            padding-bottom: 10px;
+            font-size: 1rem;
+        }
+        ul{
+            font-size: 0.9rem;
+            padding-left: 0;
+        }
+    }
+    .numeros-contacto{
+        grid-area: contacto;
+        ul{
+            list-style-type: disclosure-closed;
+        }
+    }
+    .links-utiles{
+        grid-area: links;
+        ul{
+            list-style-type: disclosure-closed;
+            li{
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    .contenedor-redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: redes;
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        img{
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

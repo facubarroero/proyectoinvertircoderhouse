@@ -5,18 +5,13 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /*------------HEADER------------*/
-header{
-    justify-content: space-around;
-}
-.nav-container{
-    display: flex;
-    justify-content: center;
-}
 header nav{
     display: flex;
     justify-content: center;
 }
-
+header nav .container-fluid{
+    justify-content: space-around !important;
+}
 header nav a{
     text-decoration: none;
     color: black;
@@ -24,6 +19,9 @@ header nav a{
 header a img{
     width: 150px;
     height: 60px;
+}
+.navbar-collapse{
+    flex-grow: 0;
 }
 header nav ul li{
     display: inline-block;
@@ -113,6 +111,7 @@ h2{
 
 /*-----GALERIA-----*/
 .galeria-container{
+    width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -230,35 +229,32 @@ h2{
 .form-tas-container{
     background-color: rgba(195, 255, 126, 0.282);
     display: flex;
-    height: 22rem;
-    margin: 5rem 10rem 3rem 10rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    width: 80%;
+    height: 27rem;
+    margin: 5rem 0 5rem 0;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
     list-style: none;
 }
-.form-tas-container{
-    background-color: rgba(195, 255, 126, 0.282);
-    display: flex;
-    height: 22rem;
-    margin: 5rem 10rem 3rem 10rem;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    list-style: none;
+.form-cont{
+    display: flex !important;
 }
 .form-cont ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 0;
 }
 .form-cont li{
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.form-cont textarea{
+    width: 100%;
+    height: 7rem;
 }
 
 /*------------FOOTER------------*/
@@ -273,6 +269,8 @@ footer{
     "logo contacto links redes"
     ;
     align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 footer img{
     margin-left: 25px;
@@ -280,11 +278,16 @@ footer img{
 }
 footer h3{
     padding-bottom: 10px;
+    font-size: 1rem;
 }
 footer div{
     display: inline-block;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+footer div ul{
+    font-size: 0.9rem;
+    padding-left: 0;
 }
 .numeros-contacto{
     grid-area: contacto;
@@ -324,14 +327,6 @@ footer .links-utiles ul li a{
 
 /*-------------- MEDIA QUERY ----------------*/
 @media screen and (max-width: 767px){
-    .nav-container ul{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "inicio ventas alquileres"
-        "tasaciones tasaciones contacto"
-        ;
-    }
     .hero-button{
         margin-top: 1rem;
     }
@@ -360,9 +355,6 @@ footer .links-utiles ul li a{
         "contacto links redes"
         ;
         justify-items: center;
-    }
-    footer h3{
-        font-size: 1rem;
     }
     .gen-container{
         grid-template-columns: 1fr;
@@ -401,5 +393,8 @@ footer .links-utiles ul li a{
         "mapa"
         "formulario"
         ;
+    }
+    .contenedor-redes ul {
+        flex-direction: column;
     }
 }

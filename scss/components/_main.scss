@@ -1,0 +1,245 @@
+main{
+    h1{
+        text-align: center;
+        color: nth($colores, 1);
+        font-size: nth($font-size, 5);
+        margin: 1rem;
+        -webkit-text-stroke: 2px nth($colores, 2);
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        animation-name: slidein;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-direction: initial;
+    }
+    h2{
+        text-align: center;
+        color: nth($colores, 2);
+        font-size:nth($font-size, 4);
+        padding: 4rem;
+        animation-name: slidein;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-direction: initial;
+    }
+}
+.main-container{
+    background-color: nth($colores, 3);
+    padding-bottom: 2rem;
+    .hero{
+        text-align: center;
+        width: 100%;
+        height: 30rem;
+        background-image: url("../img/frente-oficina.jpeg");
+        div{
+            padding: 1.5rem;
+            background-color: nth($colores, 5);
+            form{
+                display: inline-block;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                select{
+                    height: 2rem;
+                    font-size: nth($font-size, 3);
+                    border-radius: 5px;
+                    border: solid nth($colores, 2) 2px;
+                }
+            }
+            button{
+                height: 2rem;
+                font-size: nth($font-size, 3);
+                border-radius: 5px;
+                border: solid nth($colores, 2) 2px;
+            }
+        }
+    }
+    .galeria-container{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 350px 350px auto;
+        grid-template-areas: 
+        "recientes recientes recientes"
+        "grid-item1 grid-item2 grid-item3"
+        "grid-item4 grid-item5 grid-item6"
+        "boton-cargar boton-cargar boton-cargar"
+        ;
+        h2{
+            grid-area: recientes;
+        }
+        div{
+            width: 15rem;
+            height: 20rem;
+            border: 1px solid nth($colores, 2);
+            display: inline-block;
+            position: relative;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0px 13px 20px -9px rgba(0,0,0,0.83);
+            -webkit-box-shadow: 0px 13px 20px -9px rgba(0,0,0,0.83);
+            -moz-box-shadow: 0px 13px 20px -9px rgba(0,0,0,0.83);
+            text-align: center;
+            img{
+                width: 100%;
+                height: 90%;
+                object-fit: cover;
+            }
+            h3{
+                font-size: nth($font-size, 2);
+            }
+        }
+        .grid-item1{
+            grid-area: grid-item1;
+        }
+        .grid-item2{
+            grid-area: grid-item2;
+        }
+        .grid-item3{
+            grid-area: grid-item3;
+        }
+        .grid-item4{
+            grid-area: grid-item4;
+        }
+        .grid-item5{
+            grid-area: grid-item5;
+        }
+        .grid-item6{
+            grid-area: grid-item6;
+        }
+        .boton-cargar{
+            grid-area: boton-cargar;
+            display: inline-block;
+            font-size: nth($font-size, 6);
+            margin: 1rem 12rem 1rem 12rem;
+            box-shadow: 0px 13px 20px -9px rgba(0,0,0,0.83);
+            -webkit-box-shadow: 0px 13px 20px -9px rgba(0,0,0,0.83);
+            -moz-box-shadow: 0px 13px 20px -9px rgba(0,0,0,0.83);
+        }
+    }
+    .formulario-cont-container{
+        background-color: nth($colores, 4);
+        display: flex;
+        width: 80%;
+        margin: 1rem auto auto auto;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        .form-cont{
+            display: flex !important;
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0;
+                li{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    textarea{
+                        width: 100%;
+                        height: 7rem;        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.contacto-main-container{
+    background-color: nth($colores, 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        grid-area: grid-h1;
+    }
+    .gen-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "mapa formulario"
+        ; 
+        justify-items: center;
+        align-items: center;
+        .mapa{
+            grid-area: mapa;
+            iframe{
+                display: inline-block;
+                height: 20rem;
+                width: 20rem;
+                margin-bottom: 2rem;
+            }
+        }
+        .form-cont-container{
+            background-color: nth($colores, 4);
+            display: flex;
+            height: 22rem;
+            width: 80%;
+            margin-bottom: 2rem;
+            align-items: center;
+            flex-direction: column;
+            list-style: none;
+            grid-area: formulario;
+            .form-cont{
+                display: flex !important;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-left: 0;
+                    li{
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        textarea{
+                            width: 100%;
+                            height: 7rem;        
+                        }
+                    }
+                }
+            }
+            .boton-enviar{
+                margin-top: 0.4rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+.tas-main-container{
+    .form-tas-container{
+        background-color: nth($colores, 4);
+        display: flex;
+        width: 80%;
+        height: 27rem;
+        margin: 5rem 0 5rem 0;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        list-style: none;
+        .form-cont{
+            display: flex !important;
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0;
+                li{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    textarea{
+                        width: 100%;
+                        height: 7rem;        
+                    }
+                }
+            }
+        }
+    }
+}

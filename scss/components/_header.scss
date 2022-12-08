@@ -1,0 +1,30 @@
+header{
+    nav{
+        display: flex;
+        justify-content: center;
+        .container-fluid{
+            justify-content: space-around !important;
+            a{
+                text-decoration: none;
+                color: black;
+                img{
+                    width: 150px;
+                    height: 60px;
+                }
+            }
+            .navbar-collapse{
+                flex-grow: 0;
+                ul{
+                    li{
+                        display: inline-block;
+                        margin-left: 15px;
+                        margin-right: 15px;
+                        a{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
