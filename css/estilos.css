@@ -101,6 +101,8 @@ main h2 {
       -webkit-box-shadow: 0px 13px 20px -9px rgba(0, 0, 0, 0.83);
       -moz-box-shadow: 0px 13px 20px -9px rgba(0, 0, 0, 0.83);
       text-align: center; }
+      .main-container .galeria-container div:hover {
+        transform: scale(1.1); }
       .main-container .galeria-container div img {
         width: 100%;
         height: 90%;
@@ -131,12 +133,14 @@ main h2 {
     background-color: rgba(195, 255, 126, 0.282);
     display: flex;
     width: 80%;
-    margin: 1rem auto auto auto;
+    margin: 1rem auto 1rem auto;
     align-items: center;
     flex-direction: column;
-    list-style: none; }
+    list-style: none;
+    border: 2px solid black; }
     .main-container .formulario-cont-container .form-cont {
-      display: flex !important; }
+      display: flex !important;
+      margin: 1rem; }
       .main-container .formulario-cont-container .form-cont ul {
         display: flex;
         flex-direction: column;
@@ -150,6 +154,8 @@ main h2 {
           .main-container .formulario-cont-container .form-cont ul li textarea {
             width: 100%;
             height: 7rem; }
+    .main-container .formulario-cont-container .boton-enviar {
+      margin: 1rem auto 1rem auto; }
 
 .contacto-main-container {
   background-color: rgba(118, 235, 229, 0.26);
@@ -213,8 +219,8 @@ main h2 {
     background-color: rgba(195, 255, 126, 0.282);
     display: flex;
     width: 80%;
-    height: 27rem;
-    margin: 5rem 0 5rem 0;
+    height: 24rem;
+    margin: 2rem auto 2rem auto;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
